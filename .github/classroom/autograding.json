@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "strings",
+      "setup": "npm install",
+      "run": "npm run test:unit:string",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "arrays",
+      "setup": "npm install",
+      "run": "npm run test:unit:array",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "counter",
+      "setup": "npm install",
+      "run": "npm run test:e2e:counter",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "password reveal",
+      "setup": "npm install",
+      "run": "npm run test:e2e:password",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 6
+    }
+  ]
+}
