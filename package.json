@@ -1,0 +1,37 @@
+{
+  "name": "js-and-dom-exercises",
+  "version": "1.0.0",
+  "description": "assignment template",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -c-1",
+    "test:unit": "jest ./exercises",
+    "test:unit:string": "jest ./exercises/string-exercises",
+    "test:unit:array": "jest ./exercises/array-exercises",
+    "test:e2e": "npx playwright test",
+    "test:e2e:counter": "npx playwright test counter.spec.ts",
+    "test:e2e:password": "npx playwright test password-reveal.spec.ts",
+    "test": "npm run test:e2e && npm run test:unit",
+    "postinstall": "npx playwright install --with-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IT3049C/JS-and-DOM-Exercises.git"
+  },
+  "author": "Yahya Gilany <yahya.gilany@live.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IT3049C/JS-and-DOM-Exercises/issues"
+  },
+  "homepage": "https://github.com/IT3049C/JS-and-DOM-Exercises#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "jest": "^28.1.0",
+    "rewire": "^6.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.11.5",
+    "expect-playwright": "^0.8.0"
+  }
+}
