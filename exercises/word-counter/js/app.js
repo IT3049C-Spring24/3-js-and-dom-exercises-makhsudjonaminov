@@ -1,6 +1,17 @@
-// 🤖: create 2 constants with references to textarea input and the stats section from the DOM
+document.addEventListener('DOMContentLoaded', function () {
 
+  const textareaInput = document.getElementById('text');
+  const statsSection = document.getElementById('stat');
 
-// 🤖: Create an Event Listener on textarea input
-// 🤖: The event handler should update the stats section with the number of words and characters in the textarea input.
-// 🤖: You will need to utilize the split method to get the words count.
+  textareaInput.addEventListener('input', updateStats);
+
+  function updateStats() {
+    const textContent = textareaInput.value;
+
+    const wordCount = textContent.split(/\s+/).filter(word => word.length > 0).length;
+
+    const charCount = textContent.length;
+
+    statsSection.textContent = `You've written ${wordCount} words and ${charCount} characters.`;
+  }
+});
